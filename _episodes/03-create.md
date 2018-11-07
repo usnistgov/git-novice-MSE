@@ -14,8 +14,7 @@ keypoints:
 Once Git is configured,
 we can start using it.
 
-We will continue with the story of Wolfman and Dracula who are investigating if it
-is possible to send a planetary lander to Mars. 
+We will continue with the story of Wolfman and Dracula who are investigating materials degradation on Mars. 
 
 ![motivatingexample](../fig/motivatingexample.png)
 
