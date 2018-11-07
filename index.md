@@ -3,8 +3,6 @@ layout: lesson
 root: .
 ---
 
-a change
-
 Wolfman and Dracula have been hired by Universal Missions (a space
 services spinoff from Euphoric State University) to investigate 
 materials degradation and whether it
