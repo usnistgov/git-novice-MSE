@@ -59,7 +59,7 @@ $ cat pluto.txt
 {: .language-bash}
 
 ~~~
-It is so a planet!
+Pluto is cold and rocky.
 ~~~
 {: .output}
 
