@@ -29,9 +29,9 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
+Many metals and semiconductors work well.
 ~~~
 {: .output}
 
@@ -44,10 +44,10 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
-This line added to Wolfman's copy
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
+Many metals and semiconductors work well.
+Materials that are radiation-tolerant will be important.
 ~~~
 {: .output}
 
@@ -92,10 +92,10 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
-We added a different line in the other copy
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
+Many metals and semiconductors work well.
+Materials need to survive large temperature changes.
 ~~~
 {: .output}
 
@@ -171,13 +171,13 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
+Many metals and semiconductors work well.
 <<<<<<< HEAD
-We added a different line in the other copy
+Materials need to survive large temperature changes.
 =======
-This line added to Wolfman's copy
+Materials that are radiation-tolerant will be important.
 >>>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
 ~~~
 {: .output}
@@ -201,10 +201,10 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
-We removed the conflict on this line
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
+Many metals and semiconductors work well.
+Materials need to be radiation-tolerant and survive large temperature changes.
 ~~~
 {: .output}
 
@@ -289,10 +289,10 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
-We removed the conflict on this line
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
+Many metals and semiconductors work well.
+Materials need to be radiation-tolerant and survive large temperature changes.
 ~~~
 {: .output}
 
