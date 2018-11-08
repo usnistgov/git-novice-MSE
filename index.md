@@ -5,9 +5,8 @@ root: .
 
 Wolfman and Dracula have been hired by Universal Missions (a space
 services spinoff from Euphoric State University) to investigate 
-materials degradation and whether it
-is possible to send their next planetary lander to Mars.  They want to
-be able to work on the plans at the same time, but they have run into
+materials degradation on Mars.  They want to
+be able to work on the report at the same time, but they have run into
 problems doing this in the past.  If they take turns, each one will
 spend a lot of time waiting for the other to finish, but if they work
 on their own copies and email changes back and forth things will be
