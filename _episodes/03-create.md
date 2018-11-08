@@ -14,7 +14,7 @@ keypoints:
 Once Git is configured,
 we can start using it.
 
-We will continue with the story of Wolfman and Dracula who are investigating materials degradation behavior on Mars. 
+We will continue with the story of Wolfman and Dracula who are investigating materials behavior on Mars and other planets. 
 
 ![motivatingexample](../fig/motivatingexample.png)
 
