@@ -31,10 +31,10 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
-An ill-considered change
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
+Many metals and semiconductors work well.
+Diamond should be used for everything.
 ~~~
 {: .output}
 
@@ -51,10 +51,10 @@ index b36abfd..0848c8d 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1,3 +1,4 @@
- Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
- But the Mummy will appreciate the lack of humidity
-+An ill-considered change.
+ The climate is dry and mars has little atmosphere.
+ There is also significant radiation.
+ Many metals and semiconductors work well.
++Diamond should be used for everything.
 ~~~
 {: .output}
 
@@ -84,10 +84,10 @@ index df0654a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,4 @@
- Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
-+An ill-considered change
+ The climate is dry and mars has little atmosphere.
++There is also significant radiation.
++Many metals and semiconductors work well.
++Diamond should be used for everything.
 ~~~
 {: .output}
 
@@ -103,7 +103,7 @@ commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
 Author: Vlad Dracula <vlad@tran.sylvan.ia>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
-    Start notes on Mars as a base
+    Start report about materials on Mars
 
 diff --git a/mars.txt b/mars.txt
 new file mode 100644
@@ -111,7 +111,7 @@ index 0000000..df0654a
 --- /dev/null
 +++ b/mars.txt
 @@ -0,0 +1 @@
-+Cold and dry, but everything is my favorite color
++The climate is dry and mars has little atmosphere.
 ~~~
 {: .output}
 
@@ -145,10 +145,10 @@ index df0654a..93a3e13 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,4 @@
- Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
-+An ill-considered change
+ The climate is dry and mars has little atmosphere.
++There is also significant radiation.
++Many metals and semiconductors work well.
++Diamond should be used for everything.
 ~~~
 {: .output}
 
@@ -167,10 +167,10 @@ index df0654a..93a3e13 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,4 @@
- Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
-+An ill-considered change
+ The climate is dry and mars has little atmosphere.
++There is also significant radiation.
++Many metals and semiconductors work well.
++Diamond should be used for everything.
 ~~~
 {: .output}
 
@@ -186,7 +186,7 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-We will need to manufacture our own oxygen
+The atmosphere is primarily carbon dioxide.
 ~~~
 {: .output}
 
@@ -220,9 +220,9 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
+Many metals and semiconductors work well.
 ~~~
 {: .output}
 
@@ -245,7 +245,7 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
+The climate is dry and mars has little atmosphere.
 ~~~
 {: .output}
 
@@ -307,7 +307,7 @@ $ git checkout HEAD mars.txt
 >
 >  git checkout -b <new-branch-name>
 >
-> HEAD is now at f22b25e Start notes on Mars as a base
+> HEAD is now at f22b25e Start report about materials on Mars
 > ~~~
 > {: .error}
 >
@@ -408,26 +408,26 @@ moving backward and forward in time becomes much easier.
 >
 > ~~~
 > $ cd planets
-> $ echo "Venus is beautiful and full of love" > venus.txt
+> $ echo "Venus has a relatively smooth surface, but the atmosphere is very thick." > venus.txt
 > $ git add venus.txt
-> $ echo "Venus is too hot to be suitable as a base" >> venus.txt
-> $ git commit -m "Comment on Venus as an unsuitable base"
+> $ echo "Surface temperatures are also extremely high." >> venus.txt
+> $ git commit -m "Comment on Venus conditions"
 > $ git checkout HEAD venus.txt
 > $ cat venus.txt #this will print the contents of venus.txt to the screen
 > ~~~
 > {: .language-bash}
 >
 > 1. ~~~
->    Venus is too hot to be suitable as a base
+>    Surface temperatures are also extremely high.
 >    ~~~
 >    {: .output}
 > 2. ~~~
->    Venus is beautiful and full of love
+>    Venus has a relatively smooth surface, but the atmosphere is very thick.
 >    ~~~
 >    {: .output}
 > 3. ~~~
->    Venus is beautiful and full of love
->    Venus is too hot to be suitable as a base
+>    Venus has a relatively smooth surface, but the atmosphere is very thick.
+>    Surface temperatures are also extremely high.
 >    ~~~
 >    {: .output}
 > 4. ~~~
@@ -438,7 +438,7 @@ moving backward and forward in time becomes much easier.
 > > ## Solution
 > >
 > > The answer is 2 because `git add venus.txt` was used only before add the line
-> > `Venus is too hot to be suitable as a base`
+> > `Surface temperatures are also extremely high.`
 > > which was lost when `git checkout` was executed.
 > > Using the flag `-a` with `git commit` would have prevented the lost.
 > {: .solution}
