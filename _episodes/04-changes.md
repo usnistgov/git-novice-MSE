@@ -46,7 +46,7 @@ $ cd ..
 {: .language-bash}
 
 Let's create a file called `mars.txt` that contains some notes
-about the Red Planet's suitability as a base.
+about materials on Mars.
 We'll use `nano` to edit the file;
 you can use whatever editor you like.
 In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the bash command to create or edit a new file will depend on the editor you choose (it might not be `nano`). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create/) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
@@ -59,7 +59,7 @@ $ nano mars.txt
 Type the text below into the `mars.txt` file:
 
 ~~~
-Cold and dry, but everything is my favorite color
+The climate is dry and mars has little atmosphere.
 ~~~
 
 `mars.txt` now contains a single line, which we can see by running:
@@ -80,7 +80,7 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
+The climate is dry and mars has little atmosphere.
 ~~~
 {: .output}
 
@@ -140,12 +140,12 @@ To get it to do that,
 we need to run one more command:
 
 ~~~
-$ git commit -m "Start notes on Mars as a base"
+$ git commit -m "Start report about materials on Mars"
 ~~~
 {: .language-bash}
 
 ~~~
-[master (root-commit) f22b25e] Start notes on Mars as a base
+[master (root-commit) f22b25e] Start report about materials on Mars
  1 file changed, 1 insertion(+)
  create mode 100644 mars.txt
 ~~~
@@ -195,7 +195,7 @@ commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
 Author: Vlad Dracula <vlad@tran.sylvan.ia>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
-    Start notes on Mars as a base
+    Start report about materials on Mars
 ~~~
 {: .output}
 
@@ -228,8 +228,8 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
 ~~~
 {: .output}
 
@@ -275,8 +275,8 @@ index df0654a..315bf3a 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,2 @@
- Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
+ The climate is dry and mars has little atmosphere.
++There is also significant radiation.
 ~~~
 {: .output}
 
@@ -299,7 +299,7 @@ If we break it down into pieces:
 After reviewing our change, it's time to commit it:
 
 ~~~
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git commit -m "Add note about radiation"
 $ git status
 ~~~
 {: .language-bash}
@@ -322,12 +322,12 @@ Let's fix that:
 
 ~~~
 $ git add mars.txt
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git commit -m "Add note about radiation"
 ~~~
 {: .language-bash}
 
 ~~~
-[master 34961b1] Add concerns about effects of Mars' moons on Wolfman
+[master 34961b1] Add note about radiation
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -384,9 +384,9 @@ $ cat mars.txt
 {: .language-bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The climate is dry and mars has little atmosphere.
+There is also significant radiation.
+Many metals and semiconductors work well.
 ~~~
 {: .output}
 
@@ -401,9 +401,9 @@ index 315bf3a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
- Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
+ The climate is dry and mars has little atmosphere.
+ There is also significant radiation.
++Many metals and semiconductors work well.
 ~~~
 {: .output}
 
@@ -437,9 +437,9 @@ index 315bf3a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
- Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
+ The climate is dry and mars has little atmosphere.
+ There is also significant radiation.
++Many metals and semiconductors work well.
 ~~~
 {: .output}
 
@@ -449,12 +449,12 @@ and what's in the staging area.
 Let's save our changes:
 
 ~~~
-$ git commit -m "Discuss concerns about Mars' climate for Mummy"
+$ git commit -m "Discuss metals and semiconductors"
 ~~~
 {: .language-bash}
 
 ~~~
-[master 005937f] Discuss concerns about Mars' climate for Mummy
+[master 005937f] Discuss metals and semiconductors
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -484,19 +484,19 @@ commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
 Author: Vlad Dracula <vlad@tran.sylvan.ia>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-    Discuss concerns about Mars' climate for Mummy
+    Discuss metals and semiconductors
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
 Author: Vlad Dracula <vlad@tran.sylvan.ia>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
-    Add concerns about effects of Mars' moons on Wolfman
+    Add note about radiation
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
 Author: Vlad Dracula <vlad@tran.sylvan.ia>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
-    Start notes on Mars as a base
+    Start report about materials on Mars
 ~~~
 {: .output}
 
@@ -540,7 +540,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > Author: Vlad Dracula <vlad@tran.sylvan.ia>
 > Date:   Thu Aug 22 10:14:07 2013 -0400
 >
->    Discuss concerns about Mars' climate for Mummy
+>    Discuss metals and semiconductors
 > ~~~
 > {: .output}
 >
@@ -552,9 +552,9 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 > ~~~
-> * 005937f Discuss concerns about Mars' climate for Mummy
-> * 34961b1 Add concerns about effects of Mars' moons on Wolfman
-> * f22b25e Start notes on Mars as a base
+> * 005937f Discuss metals and semiconductors
+> * 34961b1 Add note about radiation
+> * f22b25e Start report about materials on Mars
 > ~~~
 > {: .output}
 >
@@ -566,9 +566,9 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 > ~~~
-> * 005937f Discuss concerns about Mars' climate for Mummy (HEAD, master)
-> * 34961b1 Add concerns about effects of Mars' moons on Wolfman
-> * f22b25e Start notes on Mars as a base
+> * 005937f Discuss metals and semiconductors (HEAD, master)
+> * 34961b1 Add note about radiation
+> * f22b25e Start report about materials on Mars
 > ~~~
 > {: .output}
 {: .callout}
@@ -618,8 +618,8 @@ repository (`git commit`):
 > last commit made to `mars.txt`?
 >
 > 1. "Changes"
-> 2. "Added line 'But the Mummy will appreciate the lack of humidity' to mars.txt"
-> 3. "Discuss effects of Mars' climate on the Mummy"
+> 2. "Added line 'Many metals and semiconductors work well.' to mars.txt"
+> 3. "Discuss metals and semiconductors"
 >
 > > ## Solution
 > > Answer 1 is not descriptive enough, and the purpose of the commit is unclear;
@@ -669,7 +669,7 @@ repository (`git commit`):
 > 1. Add some text to `mars.txt` noting your decision
 > to consider Venus as a base
 > 2. Create a new file `venus.txt` with your initial thoughts
-> about Venus as a base for you and your friends
+> about materials on Venus
 > 3. Add changes from both files to the staging area,
 > and commit those changes.
 >
@@ -682,7 +682,7 @@ repository (`git commit`):
 > > ~~~
 > > {: .language-bash}
 > > ~~~
-> > Maybe I should start with a base on Venus.
+> > Maybe we should consider materials on Venus.
 > > ~~~
 > > {: .output}
 > > ~~~
@@ -691,7 +691,7 @@ repository (`git commit`):
 > > ~~~
 > > {: .language-bash}
 > > ~~~
-> > Venus is a nice planet and I definitely should consider it as a base.
+> > Venus is a nice planet and we definitely should consider it.
 > > ~~~
 > > {: .output}
 > > Now you can add both files to the staging area. We can do that in one line:
@@ -708,12 +708,12 @@ repository (`git commit`):
 > > {: .language-bash}
 > > Now the files are ready to commit. You can check that using `git status`. If you are ready to commit use:
 > > ~~~
-> > $ git commit -m "Write plans to start a base on Venus"
+> > $ git commit -m "Write note about considering Venus"
 > > ~~~
 > > {: .language-bash}
 > > ~~~
 > > [master cc127c2]
-> >  Write plans to start a base on Venus
+> >  Write note about considering Venus
 > >  2 files changed, 2 insertions(+)
 > >  create mode 100644 venus.txt
 > > ~~~
